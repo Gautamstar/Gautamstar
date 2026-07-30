@@ -6,8 +6,9 @@
   <a href="https://gautamstar.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-7AA2F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/gautam-singh-cs/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:gautamsingh2189@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Gautamstar&style=for-the-badge&color=7AA2F7&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
+
+<img src="https://raw.githubusercontent.com/Gautamstar/Gautamstar/main/assets/pipeline.svg" alt="Ingest, store, transform, model, serve" width="100%" />
 
 </div>
 
@@ -93,15 +94,11 @@ class Gautam:
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gautamstar&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=7AA2F7&line=7AA2F7&point=FFFFFF&area=true" alt="Activity graph" width="98%" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=Gautamstar&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies" />
-
 </div>
 
 ---
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/Gautamstar/Gautamstar/output/snake.svg" alt="Snake eating my contributions" width="98%" />
 
 <sub>Open to new grad software and data engineering roles. Reach me at <a href="mailto:gautamsingh2189@gmail.com">gautamsingh2189@gmail.com</a>.</sub>
 
