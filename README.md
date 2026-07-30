@@ -76,7 +76,7 @@ class Gautam:
 
 | Project | What it does | Stack |
 | :--- | :--- | :--- |
-| **[The Almanac](https://github.com/Gautamstar/almanac-predictor)** <br> Capstone | Three tier medallion pipeline on Databricks + ADF. LSTM forecasts next day price from 11,213 sliding windows. Served via Django REST to a web and Flutter client. | `Databricks` `PySpark` `Azure SQL` `PyTorch` `Django` `Flutter` |
+| **[The Almanac](https://github.com/NolanMM/Capstones_Stock_Prediction)** <br> Team capstone | Three tier medallion pipeline on Databricks + ADF. LSTM forecasts next day price from 11,213 sliding windows. Served via Django REST to a web and Flutter client. <br> *[Project site](https://github.com/Gautamstar/almanac-predictor)* | `Databricks` `PySpark` `Azure SQL` `PyTorch` `Django` `Flutter` |
 | **[Equity Market Data Pipeline](https://github.com/Gautamstar/market-data-pipeline)** | Daily OHLCV ingestion for S&P 500 tickers into Postgres, dbt models for SMA / Bollinger / RSI, Prefect scheduling, Streamlit momentum screener. | `Python` `dbt` `Prefect` `PostgreSQL` `Streamlit` |
 | **[Financial Document Q&A](https://github.com/Gautamstar/rag-financial-qa)** <br> RAG | Hybrid BM25 + FAISS retrieval with reciprocal rank fusion over SEC 10-K filings. Token streaming, company filters, RAGAS evaluated. | `LangChain` `FAISS` `FastAPI` `Docker` |
 | **[EDA Web Service](https://eda-proj.vercel.app)** <br> Live | Upload a CSV, get semantic type inference, quality flags, and per column charts. Bundle trimmed 5.1 MB to 1.8 MB. | `FastAPI` `React` `Supabase` `Plotly` |
