@@ -27,7 +27,7 @@ class Gautam:
 
 - Computer Science honors grad who builds full stack applications **and** the pipelines that feed them, from ingestion through API, UI, and deploy.
 - Recent work: medallion architecture on Azure Databricks, dbt + Prefect batch ETL, FastAPI and Django backends, PyTorch forecasting models.
-- Currently going deeper on **distributed data processing** and **RAG systems**.
+- Currently an **ML intern at Sphere Global**, building a synthetic training-data pipeline and computer-vision tooling for automated vehicle damage detection.
 - Off keyboard: rugby, and the Tour de Guelph 75K every year.
 
 ---
@@ -84,6 +84,12 @@ class Gautam:
 | **[Financial Document Q&A](https://github.com/Gautamstar/rag-financial-qa)** <br> RAG | Hybrid BM25 + FAISS retrieval with reciprocal rank fusion over SEC 10-K filings. Token streaming, company filters, RAGAS evaluated. | `LangChain` `FAISS` `FastAPI` `Docker` |
 | **[EDA Web Service](https://eda-proj.vercel.app)** <br> Live | Upload a CSV, get semantic type inference, quality flags, and per column charts. Bundle trimmed 5.1 MB to 1.8 MB. | `FastAPI` `React` `Supabase` `Plotly` |
 | **[data-structs](https://github.com/Gautamstar/data-structs)** | Interactive data structures and algorithms lessons built for interview prep. | `Python` `HTML` |
+
+---
+
+### Open Source
+
+- **[actualbudget/actual #8603](https://github.com/actualbudget/actual/pull/8603)** (merged): fixed a silent failure in a widely used open-source personal finance app, returning a proper error when a password change is attempted with no password method set.
 
 ---
 
