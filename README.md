@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Gautam+Singh;Software+Engineer+%2B+Data+Engineer;I+build+pipelines+and+the+apps+on+top+of+them" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Gautam+Singh;Software+Engineer;Backend%2C+data%2C+and+ML+systems;I+ship+things+people+use" alt="Typing SVG" />
 
 <p>
   <a href="https://gautamstar.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-7AA2F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
@@ -18,15 +18,15 @@
 
 ```python
 class Gautam:
-    role      = "Software Engineer / Data Engineer"
+    role      = "Software Engineer: backend, data, and ML systems"
     location  = "Guelph, Ontario, Canada"
-    education = "BSc Computer Science (Honors), Conestoga College"
-    focus     = ["data pipelines", "backend APIs", "applied ML"]
-    open_to   = "New grad SWE and data engineering roles"
+    education = "Bachelor of Computer Science (Honours), Conestoga College, 2025"
+    focus     = ["backend APIs", "applied ML", "data pipelines"]
+    open_to   = "Junior / new grad SWE and ML engineering roles, Canada, US, or remote"
 ```
 
-- Computer Science honors grad who builds full stack applications **and** the pipelines that feed them, from ingestion through API, UI, and deploy.
-- Recent work: medallion architecture on Azure Databricks, dbt + Prefect batch ETL, FastAPI and Django backends, PyTorch forecasting models.
+- I build backend services and ML systems and run them in production: three of my apps are live, one on its own domain with a public API and an MCP server on npm.
+- I care about measured results: profiling a slow path, writing the test that pins the number, and shipping the fix behind CI.
 - Currently an **ML intern at Sphere Global**, building a synthetic training-data pipeline and computer-vision tooling for automated vehicle damage detection.
 - Off keyboard: rugby, and the Tour de Guelph 75K every year.
 
@@ -77,13 +77,12 @@ class Gautam:
 
 | Project | What it does | Stack |
 | :--- | :--- | :--- |
-| **[Cairn](https://d1fspum1n48e1s.cloudfront.net/)** <br> Live | Privacy-first web analytics: a Rust ingest path on AWS Lambda that records pageviews, referrers, and device breakdowns with no cookies and no consent banner. Visitor IDs are a keyed BLAKE3 hash under a salt that rotates daily, so the same person is unrecognizable tomorrow by construction, and no IP address is ever stored. One DynamoDB write per event, 5.1 ms warm, 41 Terraform-managed resources tracking three live sites at zero steady-state cost. <br> *[Code](https://github.com/Gautamstar/cairn)* | `Rust` `AWS Lambda` `DynamoDB` `CloudFront` `Terraform` |
-| **[Fitmit](https://fitpdf-rose.vercel.app)** <br> Live | Compress a PDF or image to fit under a target size, or an honest report of the smallest it can reach. A lossless pass runs first, then a binary search over a quality ladder resolves twelve options in at most four attempts. FastAPI with a Redis queue and background worker, React and TypeScript, progress streamed over SSE. <br> *[Code](https://github.com/Gautamstar/fitpdf)* | `FastAPI` `React` `TypeScript` `Redis` `Ghostscript` `Docker` |
-| **[The Almanac](https://github.com/NolanMM/Capstones_Stock_Prediction)** <br> Team capstone | Three tier medallion pipeline on Databricks + ADF. LSTM forecasts next day price from 11,213 sliding windows. Served via Django REST to a web and Flutter client. <br> *[Project site](https://github.com/Gautamstar/almanac-predictor)* | `Databricks` `PySpark` `Azure SQL` `PyTorch` `Django` `Flutter` |
-| **[Equity Market Data Pipeline](https://github.com/Gautamstar/market-data-pipeline)** | Daily OHLCV ingestion for S&P 500 tickers into Postgres, dbt models for SMA / Bollinger / RSI, Prefect scheduling, Streamlit momentum screener. | `Python` `dbt` `Prefect` `PostgreSQL` `Streamlit` |
-| **[Financial Document Q&A](https://github.com/Gautamstar/rag-financial-qa)** <br> RAG | Hybrid BM25 + FAISS retrieval with reciprocal rank fusion over SEC 10-K filings. Token streaming, company filters, RAGAS evaluated. | `LangChain` `FAISS` `FastAPI` `Docker` |
-| **[EDA Web Service](https://eda-proj.vercel.app)** <br> Live | Upload a CSV, get semantic type inference, quality flags, and per column charts. Bundle trimmed 5.1 MB to 1.8 MB. | `FastAPI` `React` `Supabase` `Plotly` |
-| **[data-structs](https://github.com/Gautamstar/data-structs)** | Interactive data structures and algorithms lessons built for interview prep. | `Python` `HTML` |
+| **[FitFileSize](https://fitfilesize.com)** <br> Live | Compresses PDFs and images (7 formats, including iPhone HEIC) to fit an upload limit or a form's exact rules, with a web app, public API, and an MCP server on npm. Async pipeline of FastAPI, Redis/RQ workers, and Server-Sent Events, self-hosted in Docker behind a Cloudflare Tunnel with deploy-on-merge. A guided search halved renders per job and took a 5 MB photo from 9.2 s to 4.2 s with byte-identical output, behind ~350 tests across three CI jobs. <br> *[Code](https://github.com/Gautamstar/fitfilesize)* | `Python` `FastAPI` `Redis` `React` `TypeScript` `Docker` `MCP` |
+| **[Distill](https://github.com/Gautamstar/distill)** <br> Applied ML | Reads invoices and receipts into typed JSON with a local vision-language model (Qwen2.5-VL). Per-field confidence from self-consistency sampling routes untrusted fields to a human, lifting delivered accuracy from 80% to 97%. 175 tests and a CI gate that fails the build when a published metric moves. | <br> *[Code](https://github.com/Gautamstar/distill)* | `PyTorch` `Qwen2.5-VL` `Pydantic` `FastAPI` `Docker` |
+| **[Cairn](https://d1fspum1n48e1s.cloudfront.net/)** <br> Live | Privacy-first web analytics: a Rust ingest path on ARM64 AWS Lambda with no cookies and no stored IPs. Visitor IDs are a keyed BLAKE3 hash under a daily-rotating salt. One DynamoDB write per event, 5.1 ms warm and 184 ms cold, 41 Terraform-managed resources tracking three live sites at zero steady-state cost. <br> *[Code](https://github.com/Gautamstar/cairn)* | `Rust` `AWS Lambda` `DynamoDB` `CloudFront` `Terraform` |
+| **[The Almanac](https://github.com/NolanMM/Capstones_Stock_Prediction)** <br> Team capstone | Market-data pipeline on Databricks + ADF feeding an LSTM forecaster, served via Django REST to web and Flutter clients. Redesigned the storage layer for ~35% faster loads. | `Databricks` `PySpark` `Azure SQL` `PyTorch` `Django` `Flutter` |
+| **[Financial Document Q&A](https://github.com/Gautamstar/rag-financial-qa)** <br> RAG | Hybrid BM25 + FAISS retrieval with reciprocal rank fusion over SEC 10-K filings, token streaming, RAGAS evaluated. | `LangChain` `FAISS` `FastAPI` `Docker` |
+| **[EDA Web Service](https://eda-proj.vercel.app)** <br> Live | Upload a CSV, get type inference, quality flags, and per column charts. Bundle trimmed 5.1 MB to 1.8 MB. | `FastAPI` `React` `Supabase` `Plotly` |
 
 ---
 
@@ -108,6 +107,6 @@ class Gautam:
 
 <div align="center">
 
-<sub>Open to new grad software and data engineering roles. Reach me at <a href="mailto:gautamsingh2189@gmail.com">gautamsingh2189@gmail.com</a>.</sub>
+<sub>Open to junior software and ML engineering roles. Reach me at <a href="mailto:gautamsingh2189@gmail.com">gautamsingh2189@gmail.com</a>.</sub>
 
 </div>
